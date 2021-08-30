@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=sect, initial-scale=1.0" />
+    <title>To do</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Todo App</h1>
+      <input type="text" name="" id="task" />
+      <button id="add">Add New task</button>
+      <div class="container">
+        <div class="todo-task-container">
+          <h2>To do tasks</h2>
+          <div
+            class="todo-tasks"
+            id="todo-tasks"
+            ondragover="allowDrop(event)"
+            ondrop="dropToDo(event)"
+          ></div>
+        </div>
+
+        <div class="done-task-container">
+          <h2>Done tasks</h2>
+          <div
+            class="done-tasks"
+            id="done-tasks"
+            ondragover="allowDrop(event)"
+            ondrop="drop(event)"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
